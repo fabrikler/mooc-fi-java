@@ -8,4 +8,8 @@ public class Word {
 
     }
 
+    public static String word() {
+        return "This is my string of choice.";
+    }
+
 }
