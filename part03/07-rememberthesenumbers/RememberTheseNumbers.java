@@ -9,12 +9,16 @@ public class RememberTheseNumbers {
 
         ArrayList<Integer> numbers = new ArrayList<>();
         while (true) {
-            int luku = Integer.valueOf(scanner.nextLine());
-            if (luku == -1) {
+            int num = Integer.valueOf(scanner.nextLine());
+            if (num == -1) {
                 break;
             }
 
-            numbers.add(luku);
+            numbers.add(num);
+        }
+
+        for (int num : numbers) {
+            System.out.println(num);
         }
 
     }
