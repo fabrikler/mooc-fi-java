@@ -7,10 +7,7 @@ public class NameOfTheOldest {
         Scanner scanner = new Scanner(System.in);
 
         int oldestAge = 0;
-        int tempAge = 0;
         String oldestName = "";
-        String tempName = "";
-
 
         while (true) {
             String input = scanner.nextLine();
@@ -20,12 +17,11 @@ public class NameOfTheOldest {
             }
 
             String[] split = input.split(",");
-            tempName = split[0];
-            tempAge = Integer.valueOf(split[1]);
+            int age = Integer.valueOf(split[1]);
 
-            if (oldestAge < tempAge) {
-                oldestAge = tempAge;
-                oldestName = tempName;
+            if (oldestAge < age) {
+                oldestAge = age;
+                oldestName = split[0];
             }
         }
 
