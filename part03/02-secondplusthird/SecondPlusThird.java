@@ -1,4 +1,3 @@
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -8,16 +7,21 @@ public class SecondPlusThird {
         Scanner scanner = new Scanner(System.in);
 
         ArrayList<Integer> numbers = new ArrayList<>();
+
         while (true) {
             int number = Integer.valueOf(scanner.nextLine());
+
             if (number == 0) {
                 break;
             }
-            
+
             numbers.add(number);
         }
 
-        int sum = numbers.get(2) + numbers.get(3);
-        System.out.println(sum);
+        int first = numbers.get(1);   
+        int second = numbers.get(2);  
+        System.out.println(first + second);
+
+        scanner.close();
     }
 }
